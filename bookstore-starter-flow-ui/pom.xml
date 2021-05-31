@@ -31,7 +31,6 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>bookstore-starter-flow-backend</artifactId>
             <version>${project.version}</version>
-           	<scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>

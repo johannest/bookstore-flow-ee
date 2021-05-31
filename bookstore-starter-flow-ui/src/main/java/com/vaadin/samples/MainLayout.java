@@ -8,6 +8,7 @@ import com.vaadin.flow.component.KeyModifier;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
+import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.router.RouteBaseData;
 import com.vaadin.flow.router.RouteConfiguration;
 import com.vaadin.flow.router.RouterLayout;
@@ -22,11 +23,10 @@ import com.vaadin.samples.crud.SampleCrudView;
 /**
  * The main layout. Contains the navigation menu.
  */
-@Theme(value = Lumo.class)
 @PWA(name = "Bookstore Starter", shortName = "Bookstore")
 @CssImport("./styles/shared-styles.css")
 @CssImport(value = "./styles/vaadin-text-field-yellow-bg.css", themeFor = "vaadin-text-field")
-public class MainLayout extends FlexLayout implements RouterLayout {
+public class MainLayout extends FlexLayout implements RouterLayout, AppShellConfigurator {
 
 	private Menu menu;
 	
